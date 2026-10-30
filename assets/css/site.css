@@ -792,7 +792,9 @@ fieldset {
 }
 
 .vitrine-faixa,
-.vitrine-artigo {
+.vitrine-faixa-topo,
+.vitrine-artigo,
+.vitrine-artigo-fim {
   min-height: 118px;
 }
 
@@ -802,14 +804,18 @@ fieldset {
 
 @container (min-width: 468px) {
   .vitrine-faixa,
-  .vitrine-artigo {
+  .vitrine-faixa-topo,
+  .vitrine-artigo,
+  .vitrine-artigo-fim {
     min-height: 78px;
   }
 }
 
 @container (min-width: 728px) {
   .vitrine-faixa,
-  .vitrine-artigo {
+  .vitrine-faixa-topo,
+  .vitrine-artigo,
+  .vitrine-artigo-fim {
     min-height: 108px;
   }
 }
@@ -1319,4 +1325,8 @@ fieldset {
   .bar-value {
     text-align: left;
   }
+}
+
+.ad-after-calculator {
+  margin-top: 48px;
 }
