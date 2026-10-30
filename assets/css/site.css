@@ -452,6 +452,7 @@ fieldset {
   min-width: 0;
 }
 
+
 .result-unit {
   font-size: 26px;
   font-weight: 800;
@@ -732,6 +733,58 @@ fieldset {
 
 .cost-table td {
   font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .cost-table.cost-table-compact {
+    min-width: 0;
+  }
+
+  .cost-table-compact,
+  .cost-table-compact tbody,
+  .cost-table-compact tr,
+  .cost-table-compact th,
+  .cost-table-compact td,
+  .cost-table-compact caption {
+    display: block;
+  }
+
+  .cost-table-compact thead {
+    display: none;
+  }
+
+  .cost-table-compact tbody tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 16px;
+    padding: 16px 20px;
+  }
+
+  .cost-table-compact tbody tr:first-child {
+    border-top: 0;
+  }
+
+  .cost-table-compact tbody th {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  .cost-table-compact td {
+    padding: 0;
+    text-align: left;
+  }
+
+  .cost-table-compact caption {
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .cost-table-compact td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 14px;
+    color: var(--muted);
+  }
 }
 
 .ad-container {

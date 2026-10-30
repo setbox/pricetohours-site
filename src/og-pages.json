@@ -42,6 +42,66 @@
     "alt": "The true cost of a car, in hours of work"
   },
   {
+    "path": "/guides/subscriptions-in-hours/",
+    "og": "guide-subscriptions-in-hours",
+    "title": "Your subscriptions, counted in hours of work",
+    "alt": "Your subscriptions, counted in hours of work"
+  },
+  {
+    "path": "/guides/eating-out-vs-cooking/",
+    "og": "guide-eating-out-vs-cooking",
+    "title": "Delivery, takeout or cooking: what a meal costs in hours",
+    "alt": "Delivery, takeout or cooking: what a meal costs in hours"
+  },
+  {
+    "path": "/guides/is-overtime-worth-it/",
+    "og": "guide-is-overtime-worth-it",
+    "title": "Is overtime worth it? What an extra hour really pays",
+    "alt": "Is overtime worth it? What an extra hour really pays"
+  },
+  {
+    "path": "/guides/what-a-raise-is-worth/",
+    "og": "guide-what-a-raise-is-worth",
+    "title": "What a raise is worth, in hours you no longer have to work",
+    "alt": "What a raise is worth, in hours you no longer have to work"
+  },
+  {
+    "path": "/guides/side-hustle-hourly-rate/",
+    "og": "guide-side-hustle-hourly-rate",
+    "title": "Your side hustle's real hourly rate",
+    "alt": "Your side hustle's real hourly rate"
+  },
+  {
+    "path": "/guides/commute-in-hours/",
+    "og": "guide-commute-in-hours",
+    "title": "The hidden hours of your commute",
+    "alt": "The hidden hours of your commute"
+  },
+  {
+    "path": "/guides/holiday-gifts-in-hours/",
+    "og": "guide-holiday-gifts-in-hours",
+    "title": "Holiday shopping, counted in hours of work",
+    "alt": "Holiday shopping, counted in hours of work"
+  },
+  {
+    "path": "/guides/emergency-fund-in-hours/",
+    "og": "guide-emergency-fund-in-hours",
+    "title": "How many hours of work is an emergency fund?",
+    "alt": "How many hours of work is an emergency fund?"
+  },
+  {
+    "path": "/guides/pet-cost-in-hours/",
+    "og": "guide-pet-cost-in-hours",
+    "title": "What a dog or cat costs in hours of work",
+    "alt": "What a dog or cat costs in hours of work"
+  },
+  {
+    "path": "/guides/the-hours-test/",
+    "og": "guide-the-hours-test",
+    "title": "The hours test: one question before you buy",
+    "alt": "The hours test: one question before you buy"
+  },
+  {
     "path": "/about/",
     "og": "home",
     "title": "About, Methodology, Contact and Privacy | Price to Hours",

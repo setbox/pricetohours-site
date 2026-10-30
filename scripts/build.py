@@ -450,6 +450,16 @@ GUIDES = [
     ("buying-on-credit", "Buying on credit spends future hours", "What interest does to the hours a purchase costs."),
     ("rent-in-hours", "How many hours of work does your rent cost?", "Turn rent into hours and check it against the 30% guideline."),
     ("true-cost-of-a-car", "The true cost of a car, in hours", "Payment, insurance, fuel and repairs, added up in hours of work."),
+    ("subscriptions-in-hours", "Your subscriptions, counted in hours of work", "Small monthly charges, added up into the hours they cost each year."),
+    ("eating-out-vs-cooking", "Delivery, takeout or cooking: what a meal costs in hours", "The same dinner three ways, and what a delivery habit costs in a year."),
+    ("is-overtime-worth-it", "Is overtime worth it?", "What an extra hour really pays after taxes and the costs of long days."),
+    ("what-a-raise-is-worth", "What a raise is worth, in hours", "A raise shrinks every price you pay. See how many hours it gives back."),
+    ("side-hustle-hourly-rate", "Your side hustle's real hourly rate", "Costs, unpaid time and self-employment tax, taken out of the headline rate."),
+    ("commute-in-hours", "The hidden hours of your commute", "Commute time and driving costs, counted in hours, and what they do to your real hourly rate."),
+    ("holiday-gifts-in-hours", "Holiday shopping, counted in hours of work", "Set a gift budget in hours and see what carrying the balance adds."),
+    ("emergency-fund-in-hours", "How many hours of work is an emergency fund?", "Turn a savings goal into hours and pick a pace in hours per week."),
+    ("pet-cost-in-hours", "What a dog or cat costs in hours of work", "First-year and yearly pet costs, per month and over a lifetime, in hours."),
+    ("the-hours-test", "The hours test: one question before you buy", "Convert, compare, wait: a simple check before any big purchase."),
 ]
 
 
@@ -462,12 +472,12 @@ def guides_hub():
     body = f"""<main id="main" class="container section section-stack">
     {breadcrumb_nav(crumbs)}
     <h1 class="article-title">Guides</h1>
-    <p class="prose">Short guides on turning money into time: which pay to use, what your free hours are worth, and what rent, cars and credit really cost in hours of work.</p>
+    <p class="prose">Short guides on turning money into time: which pay to use, what your free hours are worth, what a raise or overtime really pays, and what rent, cars, pets, subscriptions and credit cost in hours of work.</p>
     <div class="hub-grid">{cards}</div>
 </main>"""
     page = {
         "path": "/guides/", "active": "/guides/", "title": "Guides: Money in Hours of Work | Price to Hours",
-        "description": "Guides on turning prices into hours of work: discretionary hourly rate, gross vs net pay, credit, rent and the true cost of a car.",
+        "description": "Fifteen guides on turning prices into hours of work: your real hourly rate, raises, overtime, side hustles, rent, cars, pets, subscriptions and credit.",
         "og": "guides", "og_alt": "Price to Hours guides", "ads": False,
         "schema": [breadcrumb_schema(crumbs)],
     }
@@ -555,6 +565,16 @@ def main():
         "buying-on-credit": ("Buying on Credit: How Interest Adds Hours of Work", "A $1,000 purchase paid over a year at 24% APR costs about $1,135. See how interest turns into extra hours of work, with the math.", "Buying on credit spends future hours"),
         "rent-in-hours": ("How Many Hours of Work Does Your Rent Cost?", "Turn your rent into hours of work and check it against the 30% of income guideline that HUD uses to measure housing cost burden.", "How many hours of work does your rent cost?"),
         "true-cost-of-a-car": ("The True Cost of a Car in Hours of Work", "A car costs more than its payment. Add insurance, fuel, maintenance and depreciation, then turn the monthly total into hours of work.", "The true cost of a car, in hours of work"),
+        "subscriptions-in-hours": ("Subscriptions in Hours of Work: What Your Monthly Charges Cost", "Six ordinary subscriptions can cost 47 hours of work a year. Add yours up, see each one in hours, and run a ten-minute audit to cut what you don't use.", "Your subscriptions, counted in hours of work"),
+        "eating-out-vs-cooking": ("Delivery vs Takeout vs Cooking: What a Meal Costs in Hours", "One dinner three ways: cooked, picked up or delivered. See fees, tips and markups as hours of work, and what a delivery habit costs over a year.", "Delivery, takeout or cooking: what a meal costs in hours"),
+        "is-overtime-worth-it": ("Is Overtime Worth It? What an Extra Hour Really Pays", "Overtime pays time and a half, but taxes and the costs of long days come out first. Work out what an extra hour really pays and when it is worth it.", "Is overtime worth it? What an extra hour really pays"),
+        "what-a-raise-is-worth": ("What a Raise Is Worth in Hours of Work", "A raise from $20 to $22 an hour cuts every price by 9.1% in hours and frees about 164 hours a year. See the math and how to keep the raise working.", "What a raise is worth, in hours you no longer have to work"),
+        "side-hustle-hourly-rate": ("Your Side Hustle's Real Hourly Rate, After Costs and Taxes", "A side hustle that pays $20 an hour can really pay about $10. Subtract costs, unpaid time and self-employment tax to find your real hourly rate.", "Your side hustle's real hourly rate"),
+        "commute-in-hours": ("The Hidden Hours of Your Commute: Your Real Hourly Rate", "Add commute time and driving costs to your workday to find your real hourly rate. With the 2026 IRS mileage rate and a job comparison example.", "The hidden hours of your commute"),
+        "holiday-gifts-in-hours": ("Holiday Shopping in Hours of Work: Set a Gift Budget", "Count holiday spending in hours of work, set a gift budget in hours instead of dollars, and see how a credit card balance adds hours.", "Holiday shopping, counted in hours of work"),
+        "emergency-fund-in-hours": ("How Many Hours of Work Is an Emergency Fund?", "Turn an emergency fund goal into hours of work, choose how many hours a week to save, and see how long it takes to reach a starter goal.", "How many hours of work is an emergency fund?"),
+        "pet-cost-in-hours": ("What a Dog or Cat Costs in Hours of Work", "ASPCA estimates for owning a dog or cat, first year and every year after, turned into hours of work per year, per month and over a lifetime.", "What a dog or cat costs in hours of work"),
+        "the-hours-test": ("The Hours Test: One Question to Ask Before You Buy", "A simple habit before buying: turn the price into hours of work, compare it with what else those hours buy, and wait a day on big purchases.", "The hours test: one question before you buy"),
     }
     for slug, (title, description, h1) in guide_meta.items():
         crumbs = [("Home", "/"), ("Guides", "/guides/"), (h1, f"/guides/{slug}/")]
