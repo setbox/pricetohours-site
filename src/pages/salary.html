@@ -1,0 +1,97 @@
+<main id="main">
+    <section class="hero page-hero">
+        <div class="container">
+            @@BREADCRUMB@@
+            <h1 class="hero-title">Hourly to salary calculator</h1>
+            <p class="hero-lead">Turn an hourly wage into yearly, monthly and weekly pay, or work out the hourly rate of a salary. All figures are before taxes.</p>
+
+            <div class="calculator">
+                <form class="card card-raised calc-form" id="salary-form" novalidate>
+                    <div class="row">
+                        <div class="field field-wide">
+                            <label for="amount">Pay</label>
+                            <input id="amount" name="amount" type="number" inputmode="decimal" min="0" step="any" value="20">
+                        </div>
+                        <div class="field">
+                            <label for="salary-per">Paid per</label>
+                            <select id="salary-per" name="per">
+                                <option value="hour">Hour</option>
+                                <option value="week">Week</option>
+                                <option value="month">Month</option>
+                                <option value="year">Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field field-plain">
+                            <label for="salary-hours">Hours per week</label>
+                            <input id="salary-hours" name="hours" type="number" inputmode="decimal" min="1" step="any" value="40">
+                        </div>
+                        <div class="field field-plain">
+                            <label for="salary-weeks">Paid weeks per year</label>
+                            <input id="salary-weeks" name="weeks" type="number" inputmode="decimal" min="1" max="52" step="any" value="52">
+                        </div>
+                    </div>
+                    <p class="note">Use 52 paid weeks if your vacation and holidays are paid. If you are paid only for hours worked, subtract the weeks you take off.</p>
+                </form>
+
+                <section class="card card-raised result" aria-label="Result" aria-live="polite">
+                    <div data-salary-ready>
+                        <p class="result-intro">That is</p>
+                        <div class="result-figure">
+                            <span class="result-number result-money" data-out="yearly">$41,600.00</span>
+                        </div>
+                        <p class="result-sentence">a year before taxes.</p>
+                        <div class="card salary-table">
+                            <div class="salary-row"><span>Hourly</span><strong data-out="hourly">$20.00</strong></div>
+                            <div class="salary-row"><span>Daily (5 days a week)</span><strong data-out="daily">$160.00</strong></div>
+                            <div class="salary-row"><span>Weekly</span><strong data-out="weekly">$800.00</strong></div>
+                            <div class="salary-row"><span>Every two weeks</span><strong data-out="biweekly">$1,600.00</strong></div>
+                            <div class="salary-row"><span>Monthly</span><strong data-out="monthly">$3,466.67</strong></div>
+                        </div>
+                        <a class="btn" href="/?w=20" data-salary-link>See what things cost at this pay</a>
+                    </div>
+                    <div class="result-empty" data-salary-empty hidden>
+                        <strong>Enter your pay and hours.</strong>
+                        <p>Pay, hours per week and paid weeks need to be above zero.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="band">
+        <div class="container section section-stack">
+            <h2 class="section-title">Common hourly wages, per year</h2>
+            <div class="hub-grid">@@WAGE_LINKS@@</div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section split">
+            <div class="split-main prose">
+                <h2 class="section-title">How the conversion works</h2>
+                <p>A full-time year is usually counted as 40 hours a week for 52 weeks, which is 2,080 hours. Multiply an hourly wage by 2,080 to get a yearly salary, or divide a salary by 2,080 to get the hourly rate. A monthly figure is the yearly figure divided by 12, not the weekly figure times four, because a month has a little over four weeks.</p>
+                <p>These are gross numbers. Income tax and payroll taxes come out before the money reaches you, so your take-home pay is lower. When you compare prices with your time, <a href="/guides/gross-vs-net-pay/">which number to use</a> depends on the question you are asking.</p>
+                <div class="ad-container"><div class="vitrine-artigo" data-vitrine-slot="artigo"></div></div>
+                <h2 class="section-title">Minimum wage in four countries, per year</h2>
+                <div class="card table-wrap">
+                    <table class="cost-table cost-table-compact">
+                        <caption>Adult minimum wage before taxes, full time. Each yearly figure uses that country's own currency and is not converted.</caption>
+                        <thead><tr><th scope="col">Country</th><th scope="col">Per hour</th><th scope="col">Full-time year</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row"><a href="https://www.dol.gov/agencies/whd/minimum-wage">United States (federal)</a></th><td>$7.25</td><td>$15,080</td></tr>
+                            <tr><th scope="row"><a href="https://www.canada.ca/en/employment-social-development/news/2026/03/government-of-canada-raises-the-federal-minimum-wage.html">Canada (federal, from April 1, 2026)</a></th><td>C$18.15</td><td>C$37,752</td></tr>
+                            <tr><th scope="row"><a href="https://www.gov.uk/national-minimum-wage-rates">United Kingdom (age 21+, from April 1, 2026)</a></th><td>£12.71</td><td>£26,437</td></tr>
+                            <tr><th scope="row"><a href="https://www.fairwork.gov.au/about-us/workplace-laws/annual-wage-review/annual-wage-review-2026">Australia (from July 1, 2026)</a></th><td>A$26.44</td><td>A$52,255</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="note">Full time is 40 hours a week, except Australia, where the national minimum wage is set on a 38-hour week (A$1,004.90 a week). Many US states and Canadian provinces set higher minimums than the federal rate. Rates checked on @@TODAY_LABEL@@.</p>
+            </div>
+            <aside class="split-side">
+                <a class="card card-raised highlight-card" href="/"><strong>Price to hours</strong><span>Know your hourly rate? See how many hours of work your next purchase costs.</span></a>
+            </aside>
+        </section>
+    </div>
+</main>

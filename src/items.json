@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "phrase": "a Nintendo Switch 2",
+    "price": 499.99,
+    "price_label": "$499.99",
+    "price_note": "US list price for the standard console since September 1, 2026, when Nintendo raised it from $449.99.",
+    "source_name": "PC Gamer",
+    "source_url": "https://pcgamer.com/hardware/nintendo-is-raising-the-price-of-the-switch-2-later-this-year/",
+    "checked": "2026-10-30",
+    "intro": "The Switch 2 is a console people tend to buy once and use for years, often shared by a whole family. That makes it a good candidate for the hours test: the price is clear, and so is the question of how much you will really play.",
+    "before_title": "Before you buy it",
+    "before": [
+      "Count the hours you expect to play in the first year and compare them with the hours of work above. If you will play more hours than you worked to pay for it, most people would call that a fair trade.",
+      "The console is only the start. Games, a second controller, a case and the online subscription all come on top, and each one is more time at work. Add them up before you decide, not after.",
+      "The price went up $50 in September 2026. If you were waiting for a discount, that wait has already cost you. Holiday bundles that include a game can be the better deal in hours."
+    ]
+  },
+  {
+    "slug": "playstation-5",
+    "name": "PlayStation 5",
+    "phrase": "a PlayStation 5",
+    "price": 649.99,
+    "price_label": "$649.99",
+    "price_note": "US list price for the PS5 with a disc drive since April 2, 2026. The Digital Edition costs $599.99 and the PS5 Pro $899.99.",
+    "source_name": "PlayStation Blog",
+    "source_url": "https://blog.playstation.com/?p=417048",
+    "checked": "2026-10-30",
+    "intro": "The PS5 got more expensive in 2026, not cheaper, which breaks the old habit of waiting a couple of years for a console to drop in price. That makes the hours it costs today worth knowing before you buy.",
+    "before_title": "Before you buy it",
+    "before": [
+      "Decide between the disc and Digital editions first. The $50 difference is real hours of work, but disc games can be bought used and resold, while digital games cannot.",
+      "Online multiplayer needs a PlayStation Plus subscription, and that is a yearly cost on top of the console. Put a year of it into the calculator as its own purchase.",
+      "If you only play a few big games a year, ask whether the hours of work match the hours of play. If they do, buy it without guilt."
+    ]
+  },
+  {
+    "slug": "iphone-17",
+    "name": "iPhone 17",
+    "phrase": "an iPhone 17",
+    "price": 799,
+    "price_label": "$799",
+    "price_note": "US starting price for the base iPhone 17 with 256GB, the same as the iPhone 16 at launch. The iPhone 17 Pro and Pro Max cost more.",
+    "source_name": "NewsNation",
+    "source_url": "https://digital-release.newsnationnow.com/us-news/iphone-17-cost/",
+    "checked": "2026-10-30",
+    "intro": "A phone is the one device most people use every day, so the hours it costs are spread over a long time. The question is less whether it is worth it and more whether this one, now, is worth it over the phone you already have.",
+    "before_title": "Before you upgrade",
+    "before": [
+      "Divide the hours of work by the years you expect to keep it. A phone kept for four years costs a quarter of the hours per year compared with one replaced every year.",
+      "Monthly installment plans hide the total. Twenty-four small payments still add up to the full price, and sometimes more. Put the full price into the calculator, not the monthly payment.",
+      "A case, a charger and AppleCare are extra hours. So is the higher storage tier. Decide what you actually need before you get to the checkout page."
+    ]
+  },
+  {
+    "slug": "macbook-air",
+    "name": "MacBook Air",
+    "phrase": "a MacBook Air",
+    "price": 1099,
+    "price_label": "$1,099",
+    "price_note": "US starting price for the 13-inch MacBook Air with the M5 chip and 512GB, released March 11, 2026. The 15-inch model starts at $1,299.",
+    "source_name": "Tom's Hardware",
+    "source_url": "https://www.tomshardware.com/laptops/macbooks/apples-new-macbook-air-gets-m5-and-doubles-starting-storage-base-price-increases-to-usd1-099",
+    "checked": "2026-10-30",
+    "intro": "A laptop is often a work tool, which changes the math. If it helps you earn, the hours it costs come back. If it is mostly for browsing and streaming, a cheaper machine may cost far fewer hours for the same use.",
+    "before_title": "Before you buy it",
+    "before": [
+      "Be honest about what you will do with it. Writing, email and video calls run fine on much cheaper laptops. Editing video or code is where the extra hours start to pay off.",
+      "Students and teachers can buy it for $999 through Apple's education pricing, which saves real hours of work if you qualify.",
+      "Laptops last. Divide the hours by the number of years you expect to use it, and compare that with replacing a cheaper laptop sooner."
+    ]
+  },
+  {
+    "slug": "netflix",
+    "name": "a year of Netflix",
+    "phrase": "a year of Netflix",
+    "price": 239.88,
+    "price_label": "$239.88",
+    "price_note": "Twelve months of the US ad-free Standard plan at $19.99 a month, the price since the March 2026 increase. The plan with ads costs $8.99 a month and Premium $26.99.",
+    "source_name": "TheWrap",
+    "source_url": "https://www.thewrap.com/industry-news/business/netflix-price-increase-2026",
+    "checked": "2026-10-30",
+    "intro": "Subscriptions feel cheap because you see the monthly price. Over a year they add up, and most people pay for more than one. Looking at a full year in hours makes the cost visible.",
+    "before_title": "Before you renew",
+    "before": [
+      "Check how many hours you actually watched last month. If the hours of work for a year are more than the hours you will watch, the plan with ads or a pause may make more sense.",
+      "Rotate services instead of stacking them. One streaming service at a time, switched every few months, can cut the yearly hours of work in half or more.",
+      "Do the same test for every subscription you have. Put each one in as a yearly price and add up the hours. The total is often surprising."
+    ]
+  }
+]

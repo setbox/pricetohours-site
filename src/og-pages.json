@@ -1,0 +1,128 @@
+[
+  {
+    "path": "/",
+    "og": "home",
+    "title": "How many hours of your work does it cost?",
+    "alt": "Any price in hours, workdays and weeks of your work"
+  },
+  {
+    "path": "/salary/",
+    "og": "salary",
+    "title": "Hourly to salary calculator",
+    "alt": "Hourly to salary calculator"
+  },
+  {
+    "path": "/guides/discretionary-hourly-rate/",
+    "og": "guide-discretionary-hourly-rate",
+    "title": "Your discretionary hourly rate: what your time is really worth when you shop",
+    "alt": "Your discretionary hourly rate: what your time is really worth when you shop"
+  },
+  {
+    "path": "/guides/gross-vs-net-pay/",
+    "og": "guide-gross-vs-net-pay",
+    "title": "Gross or net: which pay to use when you count prices in hours",
+    "alt": "Gross or net: which pay to use when you count prices in hours"
+  },
+  {
+    "path": "/guides/buying-on-credit/",
+    "og": "guide-buying-on-credit",
+    "title": "Buying on credit spends future hours",
+    "alt": "Buying on credit spends future hours"
+  },
+  {
+    "path": "/guides/rent-in-hours/",
+    "og": "guide-rent-in-hours",
+    "title": "How many hours of work does your rent cost?",
+    "alt": "How many hours of work does your rent cost?"
+  },
+  {
+    "path": "/guides/true-cost-of-a-car/",
+    "og": "guide-true-cost-of-a-car",
+    "title": "The true cost of a car, in hours of work",
+    "alt": "The true cost of a car, in hours of work"
+  },
+  {
+    "path": "/about/",
+    "og": "home",
+    "title": "About, Methodology, Contact and Privacy | Price to Hours",
+    "alt": "About Price to Hours"
+  },
+  {
+    "path": "/guides/",
+    "og": "guides",
+    "title": "Guides: Money in Hours of Work | Price to Hours",
+    "alt": "Price to Hours guides"
+  },
+  {
+    "path": "/cost/",
+    "og": "cost",
+    "title": "What Things Cost in Hours of Work | Price to Hours",
+    "alt": "What things cost in hours of work"
+  },
+  {
+    "path": "/cost/nintendo-switch-2/",
+    "og": "cost-nintendo-switch-2",
+    "title": "How many hours of work is a Nintendo Switch 2?",
+    "alt": "Nintendo Switch 2 = 25 hours of work at $20 an hour"
+  },
+  {
+    "path": "/cost/playstation-5/",
+    "og": "cost-playstation-5",
+    "title": "How many hours of work is a PlayStation 5?",
+    "alt": "PlayStation 5 = 32.5 hours of work at $20 an hour"
+  },
+  {
+    "path": "/cost/iphone-17/",
+    "og": "cost-iphone-17",
+    "title": "How many hours of work is an iPhone 17?",
+    "alt": "iPhone 17 = 40 hours of work at $20 an hour"
+  },
+  {
+    "path": "/cost/macbook-air/",
+    "og": "cost-macbook-air",
+    "title": "How many hours of work is a MacBook Air?",
+    "alt": "MacBook Air = 55 hours of work at $20 an hour"
+  },
+  {
+    "path": "/cost/netflix/",
+    "og": "cost-netflix",
+    "title": "How many hours of work is a year of Netflix?",
+    "alt": "A year of Netflix = 12 hours of work at $20 an hour"
+  },
+  {
+    "path": "/salary/15-an-hour/",
+    "og": "salary-15",
+    "title": "$15 an hour is how much a year?",
+    "alt": "$15 an hour = $31,200 a year before taxes"
+  },
+  {
+    "path": "/salary/20-an-hour/",
+    "og": "salary-20",
+    "title": "$20 an hour is how much a year?",
+    "alt": "$20 an hour = $41,600 a year before taxes"
+  },
+  {
+    "path": "/salary/25-an-hour/",
+    "og": "salary-25",
+    "title": "$25 an hour is how much a year?",
+    "alt": "$25 an hour = $52,000 a year before taxes"
+  },
+  {
+    "path": "/salary/30-an-hour/",
+    "og": "salary-30",
+    "title": "$30 an hour is how much a year?",
+    "alt": "$30 an hour = $62,400 a year before taxes"
+  },
+  {
+    "path": "/salary/40-an-hour/",
+    "og": "salary-40",
+    "title": "$40 an hour is how much a year?",
+    "alt": "$40 an hour = $83,200 a year before taxes"
+  },
+  {
+    "path": "/salary/50-an-hour/",
+    "og": "salary-50",
+    "title": "$50 an hour is how much a year?",
+    "alt": "$50 an hour = $104,000 a year before taxes"
+  }
+]

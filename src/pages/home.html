@@ -1,0 +1,154 @@
+<main id="main">
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">How many hours of your work does it cost?</h1>
+            <p class="hero-lead">Type a price and what you earn. The price to hours calculator gives the answer in hours, workdays and weeks of your own time, before you buy.</p>
+
+            <div class="calculator" id="calculator">
+                <form class="card card-raised calc-form" id="calc-form" novalidate>
+                    <div class="row">
+                        <div class="field">
+                            <label for="price">Price of the thing</label>
+                            <input id="price" name="p" type="number" inputmode="decimal" min="0" step="any" value="500">
+                        </div>
+                        <div class="field field-currency">
+                            <label for="currency">Currency</label>
+                            <select id="currency" name="c">
+                                <option value="$">$</option>
+                                <option value="R$">R$</option>
+                                <option value="€">€</option>
+                                <option value="£">£</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend class="legend">What you earn</legend>
+                        <div class="row">
+                            <label class="choice"><input type="radio" name="m" value="wage" checked>I know my hourly pay</label>
+                            <label class="choice"><input type="radio" name="m" value="salary">Work it out from my salary</label>
+                        </div>
+                        <div class="field field-plain" data-mode="wage">
+                            <label for="wage">Hourly pay</label>
+                            <input id="wage" name="w" type="number" inputmode="decimal" min="0" step="any" value="20">
+                        </div>
+                        <div class="row" data-mode="salary" hidden>
+                            <div class="field field-plain field-wide">
+                                <label for="salary">Salary</label>
+                                <input id="salary" name="s" type="number" inputmode="decimal" min="0" step="any" value="41600">
+                            </div>
+                            <div class="field field-plain">
+                                <label for="period">Paid per</label>
+                                <select id="period" name="per">
+                                    <option value="year">Year</option>
+                                    <option value="month">Month</option>
+                                    <option value="week">Week</option>
+                                    <option value="day">Day</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="row">
+                        <div class="field field-plain">
+                            <label for="hours-per-day">Hours per workday</label>
+                            <input id="hours-per-day" name="h" type="number" inputmode="decimal" min="1" max="16" step="any" value="8" aria-describedby="hours-hint">
+                            <span class="field-hint" id="hours-hint" hidden>Using 16, the maximum.</span>
+                        </div>
+                        <div class="field field-plain">
+                            <label for="days-per-week">Workdays per week</label>
+                            <input id="days-per-week" name="d" type="number" inputmode="decimal" min="1" max="7" step="any" value="5" aria-describedby="days-hint">
+                            <span class="field-hint" id="days-hint" hidden>Using 7, the maximum.</span>
+                        </div>
+                    </div>
+
+                    <div class="true-cost">
+                        <label class="check"><input type="checkbox" id="true-cost" name="t" value="1"><span><b>Also show the true cost.</b> Count only the money left after rent, food and bills.</span></label>
+                        <a class="small-link" href="/guides/discretionary-hourly-rate/">Why this matters</a>
+                        <div class="row" data-true-cost hidden>
+                            <div class="field field-plain">
+                                <label for="take-home">Take-home pay per month</label>
+                                <input id="take-home" name="n" type="number" inputmode="decimal" min="0" step="any" value="3200">
+                            </div>
+                            <div class="field field-plain">
+                                <label for="essentials">Essential bills per month</label>
+                                <input id="essentials" name="e" type="number" inputmode="decimal" min="0" step="any" value="1550">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <section class="card card-raised result" id="result" aria-label="Result">
+                    <div data-result-ready>
+                        <p class="result-intro">This costs you</p>
+                        <div class="result-figure">
+                            <span class="result-number" data-figure>25</span>
+                            <span class="result-unit" data-unit>hours of work</span>
+                        </div>
+                        <p class="result-sentence" data-sentence>3 full workdays and 1 hour more, working 8 hours a day.</p>
+
+                        <div class="true-compare" data-compare hidden>
+                            <div><span class="compare-label">From your pay</span><strong data-pay-figure>25 hours</strong></div>
+                            <div><span class="compare-label">From money left after bills</span><strong data-true-figure>52.5 hours</strong></div>
+                            <p class="compare-note" data-compare-note>Bills take their share first, so each purchase costs more of your time than your pay suggests.</p>
+                        </div>
+
+                        <div class="week">
+                            <div class="week-caption"><span data-grid-caption>Your work week, one square per hour</span><span data-grid-note></span></div>
+                            <div class="week-grid" role="img" aria-label="Week grid with 25 of 40 hours filled" data-grid style="grid-template-columns: repeat(5, minmax(0, 1fr))">@@WEEK_GRID@@</div>
+                        </div>
+
+                        <p class="result-basis" data-basis>Based on $20.00 an hour before taxes.</p>
+                        <div class="result-actions">
+                            <button class="btn" type="button" data-share>Share this result</button>
+                            <a href="/cost/">Compare with common purchases</a>
+                        </div>
+                        <p class="share-status" data-share-status role="status"></p>
+                    </div>
+                    <div class="result-limit" data-result-limit hidden>
+                        <div class="limit-art" data-limit-art aria-hidden="true"></div>
+                        <strong class="limit-title" data-limit-title></strong>
+                        <p data-limit-body></p>
+                    </div>
+                    <div class="result-empty" data-result-empty hidden>
+                        <strong data-empty-title>Enter a price and your pay.</strong>
+                        <p data-empty-hint>The answer shows up here as you type.</p>
+                    </div>
+                </section>
+                <p class="visually-hidden" aria-live="polite" data-live></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="result-bar" data-result-bar hidden aria-hidden="true"><span data-bar-figure>25 hours</span> of work</div>
+
+    <section class="band">
+        <div class="container section section-stack">
+            <h2 class="section-title">What common things cost, in hours of work</h2>
+            @@COST_TABLE@@
+            <div class="ad-container"><div class="vitrine-faixa" data-vitrine-slot="faixa"></div></div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section split">
+            <div class="split-main">
+                <h2 class="section-title">How the math works</h2>
+                <p class="prose">The calculator divides the price by your hourly pay. If you enter a salary, it first turns it into an hourly rate: a yearly salary is divided by 52 weeks, then by your workdays and hours. A monthly salary is multiplied by 12 before that, because months have different numbers of workdays.</p>
+                <p class="prose">The true cost goes one step further. Rent, food and bills get paid first, so only what is left is free to spend. Divide that by your hours and the free hourly rate is usually much lower than your pay. Every purchase costs more of your time than it seems.</p>
+                <div class="card formula">hours = price ÷ hourly pay<br>hourly pay = yearly salary ÷ 52 ÷ days ÷ hours<br>free hourly rate = (take-home − bills) × 12 ÷ 52 ÷ days ÷ hours</div>
+                <p class="note">More detail in <a href="/about/#method">how we calculate</a>. Need it the other way around? The <a href="/salary/">hourly to salary calculator</a> turns a wage into yearly pay.</p>
+            </div>
+            <div class="split-side">
+                <h2 class="section-title">Read more</h2>
+                @@GUIDE_CARDS@@
+                <a class="text-link" href="/guides/">All guides</a>
+            </div>
+        </section>
+
+        <figure class="quote">
+            <blockquote>“Money is something we choose to trade our life energy for.”</blockquote>
+            <figcaption>Vicki Robin and Joe Dominguez, <cite>Your Money or Your Life</cite></figcaption>
+        </figure>
+    </div>
+</main>

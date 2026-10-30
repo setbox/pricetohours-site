@@ -1,0 +1,26 @@
+[
+  {
+    "wage": 15,
+    "note": "$15 an hour is the minimum wage many US states and cities have reached or are moving toward, and about twice the federal minimum of $7.25. It is a common starting wage in retail, food service and warehouse jobs."
+  },
+  {
+    "wage": 20,
+    "note": "$20 an hour is a round number many people use as a benchmark: a little over $40,000 a year at full time, before taxes. It is a common wage for experienced service, administrative and trade jobs."
+  },
+  {
+    "wage": 25,
+    "note": "$25 an hour crosses $50,000 a year at full time. At this level the difference between gross and take-home pay starts to matter more, because more of each extra dollar goes to taxes."
+  },
+  {
+    "wage": 30,
+    "note": "$30 an hour is about $62,000 a year at full time. Many skilled trade, nursing and office jobs pay around this level, and it is where overtime starts to add up fast."
+  },
+  {
+    "wage": 40,
+    "note": "$40 an hour is a little over $83,000 a year at full time. Contractors and freelancers often quote this rate, but they also pay their own taxes, equipment and unpaid time between jobs, so their real rate is lower."
+  },
+  {
+    "wage": 50,
+    "note": "$50 an hour is about $104,000 a year at full time. Even at this level, essential bills set the real free hourly rate, which is why the true-cost view still matters."
+  }
+]
