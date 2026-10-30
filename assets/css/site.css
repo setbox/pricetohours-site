@@ -791,6 +791,10 @@ fieldset {
   container-type: inline-size;
 }
 
+.ad-container [data-vitrine-slot] {
+  text-align: center;
+}
+
 .vitrine-faixa,
 .vitrine-faixa-topo,
 .vitrine-artigo,
